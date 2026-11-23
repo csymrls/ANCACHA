@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ANCACHA Studios — Photoshoot Studio Booking</title>
+<meta name="description" content="Book retro-styled photo studio sets by the hour: neon loft, daylight suite, and infinite cyclorama.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="logo" aria-label="ANCACHA Studios home">
+      <svg class="badge" viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="8" width="28" height="19" rx="3" fill="#FFB800" stroke="#18181B" stroke-width="2"/><rect x="8" y="4" width="8" height="5" fill="#FF2A85" stroke="#18181B" stroke-width="2"/><circle cx="16" cy="17" r="6" fill="#00E5FF" stroke="#18181B" stroke-width="2"/><circle cx="16" cy="17" r="2" fill="#18181B"/></svg>
+      <span>ANCACHA STUDIOS</span>
+    </a>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav id="menu" class="menu">
+      <a href="#studios">Studios</a><a href="#packages">Packages</a><a href="#equipment">Equipment</a><a href="#gallery">Gallery</a><a href="#faq">FAQ</a>
+      <a href="#book" class="btn btn-pink">Book Now</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="tag"><span class="rec">REC ●</span> Open for bookings</p>
+      <h1>Capture Your Vision in Full Analog &amp; Digital Color</h1>
+      <p class="lead">Three hand-built sets, pro lighting and a film-loving crew in one studio. Pick a set, pick a time, and shoot.</p>
+      <div class="cta-row">
+        <a href="#studios" class="btn btn-cyan">Explore Sets</a>
+        <a href="#book" class="btn btn-pink">Book a Session</a>
+      </div>
+    </div>
+    <div class="viewfinder">
+      <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1000&q=80" alt="Vintage camera on a studio table">
+      <span class="vf tl"></span><span class="vf tr"></span><span class="vf bl"></span><span class="vf br"></span>
+      <span class="vf-label top">REC ● 00:24:17</span>
+      <span class="vf-label bot">ISO 400 · f/2.8 · 1/125</span>
+      <span class="vf-grid"></span>
+    </div>
+  </div>
+</section>
+
+<!-- STUDIOS -->
+<section id="studios" class="sec">
+  <div class="wrap">
+    <h2>Studio Spaces</h2>
+    <p class="sub">Three sets, each ready to shoot the moment you walk in.</p>
+    <div class="grid-3">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Neon gel lighting with chrome props">
+        <div class="card-b">
+          <span class="pill pill-cyan">Set 01</span>
+          <h3>The Y2K Chrome &amp; Neon Loft</h3>
+          <p>Colored gels, chrome props and reflective backdrops for glossy, high-contrast looks.</p>
+          <ul class="specs"><li><b>650</b> sq ft</li><li><b>$60</b>/hr</li><li><b>8</b> people</li></ul>
+          <button class="btn btn-amber select-set" data-set="loft">Select Set</button>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Bright room with large windows and furniture">
+        <div class="card-b">
+          <span class="pill pill-amber">Set 02</span>
+          <h3>Golden Hour Daylight Suite</h3>
+          <p>Large windows, vintage mid-century furniture and warm sheer curtains for soft natural light.</p>
+          <ul class="specs"><li><b>800</b> sq ft</li><li><b>$55</b>/hr</li><li><b>10</b> people</li></ul>
+          <button class="btn btn-amber select-set" data-set="daylight">Select Set</button>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=800&q=80" alt="Camera pointed at a seamless studio backdrop">
+        <div class="card-b">
+          <span class="pill pill-pink">Set 03</span>
+          <h3>The Infinite Cyclorama Wall</h3>
+          <p>Seamless white and pastel cove with a heavy strobe rig for clean product and fashion work.</p>
+          <ul class="specs"><li><b>1,400</b> sq ft</li><li><b>$85</b>/hr</li><li><b>15</b> people</li></ul>
+          <button class="btn btn-amber select-set" data-set="cyclorama">Select Set</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section id="packages" class="sec sec-alt">
+  <div class="wrap">
+    <h2>Packages &amp; Pricing</h2>
+    <p class="sub">Longer sessions get a bigger discount on the set's hourly rate.</p>
+    <div class="grid-3">
+      <article class="ticket">
+        <p class="mono">ADMIT ONE</p>
+        <h3>Quick Reel</h3>
+        <p class="mono big">1 Hr</p>
+        <p class="mono save">Standard hourly rate</p>
+        <ul class="checks"><li>1 set of your choice</li><li>Strobes &amp; continuous LEDs</li><li>Choice of 2 backdrops</li><li>Bluetooth speaker</li></ul>
+        <button class="btn btn-cyan choose-pkg" data-hours="1">Choose Package</button>
+      </article>
+      <article class="ticket featured">
+        <p class="mono">ADMIT ONE · MOST BOOKED</p>
+        <h3>Creator Session</h3>
+        <p class="mono big">3 Hrs</p>
+        <p class="mono save">10% off hourly rate</p>
+        <ul class="checks"><li>1 set of your choice</li><li>Full lighting kit</li><li>Choice of 4 backdrops</li><li>Free prop shelf access</li><li>15 min setup buffer</li></ul>
+        <button class="btn btn-pink choose-pkg" data-hours="3">Choose Package</button>
+      </article>
+      <article class="ticket">
+        <p class="mono">ADMIT ONE</p>
+        <h3>Full Production</h3>
+        <p class="mono big">6 Hrs</p>
+        <p class="mono save">20% off hourly rate</p>
+        <ul class="checks"><li>1 set of your choice</li><li>Full lighting kit + stands</li><li>Unlimited backdrops</li><li>Hair &amp; makeup corner</li><li>Studio assistant on call</li></ul>
+        <button class="btn btn-amber choose-pkg" data-hours="6">Choose Package</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPMENT -->
+<section id="equipment" class="sec">
+  <div class="wrap">
+    <h2>Gear &amp; Props</h2>
+    <div class="grid-2">
+      <div class="panel">
+        <h3>Included Studio Gear</h3>
+        <ul class="checks">
+          <li>Strobes with softboxes, umbrellas and grids</li>
+          <li>Continuous LED panels, dimmable</li>
+          <li>Paper and fabric backdrops, 12 colors</li>
+          <li>Light stands, C-stands and sandbags</li>
+          <li>Bluetooth speaker and tethering station</li>
+        </ul>
+      </div>
+      <div class="panel panel-alt">
+        <h3>Optional Retro Add-ons</h3>
+        <ul class="addons">
+          <li><span>35mm film camera rental</span><b class="mono">$45</b></li>
+          <li><span>Fog machine</span><b class="mono">$25</b></li>
+          <li><span>RGB tube lights (set of 4)</span><b class="mono">$30</b></li>
+          <li><span>Vintage CRT TV prop</span><b class="mono">$20</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="sec sec-alt">
+  <div class="wrap">
+    <h2>Lookbook Gallery</h2>
+    <div class="filters" role="group" aria-label="Filter gallery">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="y2k">Y2K Editorial</button>
+      <button class="filter" data-filter="portrait">Portraits</button>
+      <button class="filter" data-filter="brand">Brand Lookbook</button>
+    </div>
+    <div class="gallery" id="galleryGrid">
+      <figure data-cat="y2k"><img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=700&q=80" alt="Y2K editorial neon shoot" loading="lazy"><figcaption>Neon Static</figcaption></figure>
+      <figure data-cat="portrait"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80" alt="Editorial portrait" loading="lazy"><figcaption>Window Light</figcaption></figure>
+      <figure data-cat="brand"><img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=700&q=80" alt="Brand lookbook interior" loading="lazy"><figcaption>Home Collection</figcaption></figure>
+      <figure data-cat="portrait"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80" alt="Male portrait" loading="lazy"><figcaption>Studio Portrait</figcaption></figure>
+      <figure data-cat="y2k"><img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?auto=format&fit=crop&w=700&q=80" alt="Colorful gel lighting" loading="lazy"><figcaption>Gel Glow</figcaption></figure>
+      <figure data-cat="brand"><img src="https://images.unsplash.com/photo-1493863641943-9b68992a8d07?auto=format&fit=crop&w=700&q=80" alt="Photographer at work" loading="lazy"><figcaption>Behind the Lens</figcaption></figure>
+      <figure data-cat="portrait"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=700&q=80" alt="Close portrait" loading="lazy"><figcaption>Golden Hour</figcaption></figure>
+      <figure data-cat="y2k"><img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=700&q=80" alt="Vintage film camera" loading="lazy"><figcaption>Analog Roll</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="book" class="sec">
+  <div class="wrap">
+    <h2>Book Your Session</h2>
+    <p class="sub">No payment is taken here. This simulator prices your shoot and issues a pass.</p>
+    <div class="book-grid">
+      <form id="bookForm" class="panel" novalidate>
+        <div class="field">
+          <label for="set">Studio set</label>
+          <select id="set" required>
+            <option value="">Choose a set…</option>
+            <option value="loft">Set 01: Y2K Chrome &amp; Neon Loft ($60/hr)</option>
+            <option value="daylight">Set 02: Golden Hour Daylight Suite ($55/hr)</option>
+            <option value="cyclorama">Set 03: Infinite Cyclorama Wall ($85/hr)</option>
+          </select>
+          <small class="err" data-for="set"></small>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="date">Date</label>
+            <input type="date" id="date" required>
+            <small class="err" data-for="date"></small>
+          </div>
+          <div class="field">
+            <label for="hours">Duration</label>
+            <select id="hours"></select>
+          </div>
+        </div>
+        <div class="field">
+          <label id="slotLabel">Start time</label>
+          <div class="slots" id="slots" role="radiogroup" aria-labelledby="slotLabel"></div>
+          <small class="err" data-for="slot"></small>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" autocomplete="name" required>
+            <small class="err" data-for="name"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" autocomplete="email" required>
+            <small class="err" data-for="email"></small>
+          </div>
+        </div>
+        <div class="field">
+          <label for="shoot">Shoot type</label>
+          <select id="shoot" required>
+            <option value="">Choose a type…</option>
+            <option>Y2K editorial</option><option>Portraits</option><option>Brand lookbook</option><option>Product</option><option>Music or video</option>
+          </select>
+          <small class="err" data-for="shoot"></small>
+        </div>
+        <fieldset class="field">
+          <legend>Paid add-ons</legend>
+          <label class="check"><input type="checkbox" name="addon" value="film" data-price="45" data-name="35mm film camera"> 35mm film camera <b class="mono">+$45</b></label>
+          <label class="check"><input type="checkbox" name="addon" value="fog" data-price="25" data-name="Fog machine"> Fog machine <b class="mono">+$25</b></label>
+          <label class="check"><input type="checkbox" name="addon" value="rgb" data-price="30" data-name="RGB tube lights"> RGB tube lights <b class="mono">+$30</b></label>
+          <label class="check"><input type="checkbox" name="addon" value="crt" data-price="20" data-name="Vintage CRT TV"> Vintage CRT TV <b class="mono">+$20</b></label>
+        </fieldset>
+        <button type="submit" class="btn btn-pink wide">Confirm Booking</button>
+      </form>
+
+      <aside class="receipt" aria-live="polite">
+        <h3 class="mono">ANCACHA STUDIOS</h3>
+        <p class="mono center">— BOOKING RECEIPT —</p>
+        <dl class="mono" id="receiptBody"></dl>
+        <hr>
+        <p class="mono total"><span>TOTAL</span><span id="total">$0.00</span></p>
+        <p class="mono center fine">Tax included. Free rescheduling up to 48 hrs before.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="sec sec-alt">
+  <div class="wrap narrow">
+    <h2>FAQ</h2>
+    <div class="faq">
+      <div class="faq-i"><button aria-expanded="false">How do I reserve a set?<i></i></button><div class="faq-a"><p>Pick a set, date, start time and duration in the booking form. Your pass appears right after you confirm.</p></div></div>
+      <div class="faq-i"><button aria-expanded="false">Can I reschedule or cancel?<i></i></button><div class="faq-a"><p>Yes. Reschedule free up to 48 hours before your session. Cancellations within 48 hours are charged one hour.</p></div></div>
+      <div class="faq-i"><button aria-expanded="false">Is a photographer included?<i></i></button><div class="faq-a"><p>No. Bring your own photographer or crew. Our studio assistant helps with lights and gear on the Full Production package.</p></div></div>
+      <div class="faq-i"><button aria-expanded="false">How many people can come?<i></i></button><div class="faq-a"><p>Capacity is 8 in the Loft, 10 in the Daylight Suite and 15 in the Cyclorama, including your crew.</p></div></div>
+      <div class="faq-i"><button aria-expanded="false">Can I bring my own gear?<i></i></button><div class="faq-a"><p>Yes. Our lighting is free to use, and you can bring cameras, props and wardrobe. Please skip glitter and confetti.</p></div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div><h3>ANCACHA STUDIOS</h3><p>Retro-minded photo sets for people who still love grain.</p></div>
+    <div><h4>Visit</h4><address>88 Sampaguita Street<br>Ormoc City, Leyte, PH</address></div>
+    <div><h4>Hours</h4><p class="mono">Mon–Fri 9:00–21:00<br>Sat–Sun 10:00–19:00</p></div>
+    <div><h4>Follow</h4><p class="social"><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="TikTok">TikTok</a><a href="#" aria-label="Facebook">Facebook</a></p></div>
+  </div>
+  <p class="copy mono">© <span id="year"></span> ANCACHA Studios. All rights reserved.</p>
+</footer>
+
+<!-- CONFIRMATION MODAL -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle" hidden>
+  <div class="pass">
+    <p class="mono">ADMIT ONE · ANCACHA STUDIOS</p>
+    <h3 id="mTitle">You're booked!</h3>
+    <p class="mono ref" id="mRef"></p>
+    <dl class="mono" id="mBody"></dl>
+    <p class="mono total"><span>TOTAL</span><span id="mTotal"></span></p>
+    <p class="fine">A confirmation would be sent to <b id="mEmail"></b>.</p>
+    <button class="btn btn-cyan" id="mClose">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
